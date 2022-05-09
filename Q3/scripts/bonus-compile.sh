@@ -28,3 +28,5 @@ snarkjs zkey export verificationkey SystemOfEquations/circuit_final.zkey SystemO
 snarkjs zkey export solidityverifier SystemOfEquations/circuit_final.zkey ../SystemOfEquationsVerifier.sol
 
 cd ../..
+
+cmd k/

@@ -27,4 +27,16 @@ snarkjs zkey export verificationkey HelloWorld/circuit_final.zkey HelloWorld/ver
 # generate solidity contract
 snarkjs zkey export solidityverifier HelloWorld/circuit_final.zkey ../HelloWorldVerifier.sol
 
+cd HelloWorld
+#-node HelloWorld_js/generate_witness.js HelloWorld_js/HelloWorld.wasm ./input.json ./output.wtns
+#node witness_calculator.js output.wtns ../input.json
+#snarkjs proof --witness output.wtns --provingkey ../circuit_final.zkey
+#-snarkjs groth16 prove ./circuit_final.zkey ./output.wtns ./proof.json ./public.json
+#cd HelloWorld
+#snarkjs calculatewitness --wasm HelloWorld_js/HelloWorld.wasm --input input.json
+
+#-snarkjs groth16 verify verification_key.json public.json proof.json
+
 cd ../..
+
+cmd /k
